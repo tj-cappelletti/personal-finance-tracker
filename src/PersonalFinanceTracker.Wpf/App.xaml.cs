@@ -7,7 +7,7 @@ public partial class App
 {
     private readonly IServiceProvider _serviceProvider = ConfigureServices();
 
-    private static IServiceProvider ConfigureServices()
+    private static ServiceProvider ConfigureServices()
     {
         var services = new ServiceCollection();
 
