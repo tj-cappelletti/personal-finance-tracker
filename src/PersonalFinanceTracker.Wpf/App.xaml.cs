@@ -1,13 +1,26 @@
-﻿using System.Configuration;
-using System.Data;
-using System.Windows;
+﻿using System.Windows;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace PersonalFinanceTracker.Wpf;
 
-/// <summary>
-/// Interaction logic for App.xaml
-/// </summary>
-public partial class App : Application
+public partial class App
 {
-}
+    private readonly IServiceProvider _serviceProvider = ConfigureServices();
 
+    private static IServiceProvider ConfigureServices()
+    {
+        var services = new ServiceCollection();
+
+        services.AddScoped<MainWindow>();
+
+        return services.BuildServiceProvider();
+    }
+
+    protected override void OnStartup(StartupEventArgs e)
+    {
+        base.OnStartup(e);
+
+        var mainWindow = _serviceProvider.GetService<MainWindow>();
+        mainWindow?.Show();
+    }
+}
