@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinanceTracker.UnitTests", "PersonalFinanceTracker.UnitTests\PersonalFinanceTracker.UnitTests.csproj", "{9690DE84-06A9-4DE1-A12B-45A7461D0BA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinanceTracker.Wpf", "PersonalFinanceTracker.Wpf\PersonalFinanceTracker.Wpf.csproj", "{25999E11-03EC-4E20-89EB-1F85831E7F81}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalFinanceTracker.WpfApp", "PersonalFinanceTracker.WpfApp\PersonalFinanceTracker.WpfApp.csproj", "{25999E11-03EC-4E20-89EB-1F85831E7F81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
